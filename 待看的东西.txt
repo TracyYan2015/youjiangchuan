@@ -1,0 +1,4 @@
+关于update返回值的意义：
+http://blog.csdn.net/muximuxi_kgsecond/article/details/8274568
+
+

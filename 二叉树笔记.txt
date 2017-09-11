@@ -30,3 +30,6 @@ while (cur != null || !stack.empty()) {
         cur = cur.right;
     }
 }
+
+post traverse nonrecursively
+
