@@ -1,0 +1,32 @@
+branch: m
+nodes: n
+h
+
+1 + m + m^2+m^(h-1)
+= 1*(1-m^h) / (1-m)
+= (m^h-1)/(m-1) = NODES(h)
+
+NODES(h-1) <= n <= NODES(h)
+(m^(h-1)-1)/(m-1) <= n
+m^(h-1) <= n(m-1)+1
+h-1 <= logm(n(m-1)+1)
+h <= logm(n(m-1)+1)+1
+
+(m^h-1)/(m-1) >= n
+h >= logm(n(m-1)+1)
+
+递归遍历算法的非递归实现
+中序
+stack.push(root)
+BTNode *cur;
+cur = root;
+while (cur != null || !stack.empty()) {
+    if (cur != null) {
+        stack.push(cur);
+        cur = cur.left;
+    } else if (!stack.empty()) {
+        top = stack.pop();
+        visit(top);
+        cur = cur.right;
+    }
+}
