@@ -1,0 +1,31 @@
+1. 栈的定义
+    基本操作（过一遍即可）
+    顺序栈的实现
+        typedef struct {
+            ElemType data[MaxSize];
+            int top;
+        }
+    链式栈
+        typedef struct LinkNode {
+            ElemType data;
+            struct LinkNode *next;
+        } *LkStack;
+
+2. 队列
+    顺序存储的队列
+    循环队列
+        头指针、尾指针更新
+        判空、判满条件，元素个数求解
+    链式队列
+        基本操作
+
+3. 栈和队列的应用
+    括号匹配－栈
+    表达式求解
+
+
+
+
+    
+
+
